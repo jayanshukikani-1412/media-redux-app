@@ -1,5 +1,18 @@
 {
-    "users":[],
-    "albums":[],
-    "photos":[]
+  "users": [
+    { "id": 1, "name": "Jayanshu" },
+    { "id": 2, "name": "Parth" },
+    { "id": 3, "name": "Jayesh" },
+    { "id": 4, "name": "Rashvin" },
+    { "id": 5, "name": "Manav" },
+    { "id": 6, "name": "Brijesh" },
+    { "id": 7, "name": "Raj" },
+    { "id": 8, "name": "Keyur" },
+    { "id": 9, "name": "Dhiren" },
+    { "id": 10, "name": "Abhishek" }
+  ],
+  "albums": [],
+  "photos": []
 }
+
+
