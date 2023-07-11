@@ -1,8 +1,8 @@
 
 function App() {
   return (
-    <div className="App">
-      App!!!
+    <div className="container mx-auto">
+      App
     </div>
   );
 }
