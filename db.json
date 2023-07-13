@@ -1,5 +1,14 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "May Kirlin",
+      "id": 1
+    },
+    {
+      "name": "Terry O'Conner",
+      "id": 2
+    }
+  ],
   "albums": [],
   "photos": []
 }
