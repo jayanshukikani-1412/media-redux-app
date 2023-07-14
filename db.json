@@ -1,12 +1,16 @@
 {
   "users": [
     {
-      "name": "May Kirlin",
+      "name": "Erika Oberbrunner",
       "id": 1
     },
     {
-      "name": "Terry O'Conner",
+      "name": "Annie Abbott",
       "id": 2
+    },
+    {
+      "name": "Shelly Schultz",
+      "id": 3
     }
   ],
   "albums": [],
