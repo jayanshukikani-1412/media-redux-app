@@ -1,34 +1,91 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
+      "name": "Saul Orn",
+      "id": 1
     },
     {
-      "name": "Elsie Price",
-      "id": 3
-    },
-    {
-      "name": "Harold Strosin",
-      "id": 4
+      "name": "Roberta Schmidt",
+      "id": 2
     }
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Hiking Trip",
-      "userId": 1
+      "userId": 1,
+      "title": "Practical Soft Chips",
+      "id": 1
     },
     {
       "userId": 1,
-      "title": "Sleek Wooden Tuna",
+      "title": "Gorgeous Rubber Salad",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "title": "Handcrafted Cotton Chicken",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "title": "Recycled Steel Cheese",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "title": "Rustic Fresh Cheese",
+      "id": 5
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 2,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3480006982369280",
+      "id": 6
+    },
+    {
+      "albumId": 2,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2898703331360768",
+      "id": 7
+    },
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2615369636249600",
+      "id": 8
+    },
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5470710585622528",
+      "id": 9
+    },
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150/abstract?lock=6847727688220672",
+      "id": 10
+    },
+    {
+      "albumId": 2,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2664107192877056",
       "id": 11
     },
     {
-      "userId": 1,
-      "title": "Handcrafted Concrete Fish",
+      "albumId": 2,
+      "url": "https://loremflickr.com/150/150/abstract?lock=4080255270649856",
       "id": 12
+    },
+    {
+      "albumId": 4,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5081449879306240",
+      "id": 13
+    },
+    {
+      "albumId": 5,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2586185853566976",
+      "id": 14
+    },
+    {
+      "albumId": 5,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5268294057590784",
+      "id": 15
     }
-  ],
-  "photos": []
+  ]
 }

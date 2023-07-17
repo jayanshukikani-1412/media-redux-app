@@ -1,36 +1,33 @@
 import React from 'react'
 import { useFetchAlbumsQuery, useAddAlbumMutation } from '../store'
 import Skeleton from './Skeleton'
-import ExapandablePanel from './ExpandablePanel'
 import Button from './Button';
+import AlbumsListItem from './AlbumsListItem';
 
 const AlbumsList = ({user}) => {
-  const {data, error, isLoading} = useFetchAlbumsQuery(user);
+  const {data, error, isFetching} = useFetchAlbumsQuery(user);
+  useFetchAlbumsQuery(user);
   const [addAlbum, results] = useAddAlbumMutation();
-
   const handleAddAlbum = () => {
     addAlbum(user);
   }
   
   let content;
-  if(isLoading){
-    content = <Skeleton times={2}/>
+  if(isFetching){
+    content = <Skeleton className="h-10 w-full" times={2}/>;
   }else if (error){
-    content = <div>Error Loading Albums</div>
+    content = <div>Error Loading Albums</div>;
   }else{
     content = data.map(album =>{
-      const header = <div>{album.title}</div>
-      return <ExapandablePanel key={album.id} header={header}>
-        List Of Photos in the album
-      </ExapandablePanel>
+      return <AlbumsListItem key={album.id} album={album} />
     })
   }
 
   return (
     <div>
-      <div className='d-flex justify-space-between'>
-        Albums for {user.name}
-        <Button onClick={handleAddAlbum}>
+      <div className='flex flex-row justify-between m-2'>
+        <h3 className='text-lg font-bold'>Albums for {user.name}</h3>
+        <Button onClick={handleAddAlbum} loading={results.isLoading}>
           + Add Album
         </Button>
         </div>
